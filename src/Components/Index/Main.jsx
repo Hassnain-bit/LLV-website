@@ -17,7 +17,7 @@ export default function Main() {
                 src={main_img}
                 alt="main-img"
               />
-              <span className="text-xl font-semibold absolute top-1/2 left-1/2 translate-x-[-6%] translate-y-[-260%] xl:translate-x-[105%] translate-y-[-135%]">Look, feel, live,<br/>younger, longer</span>
+              <span className="text-xl xl:text-3xl font-semibold absolute top-1/2 left-1/2 translate-x-[-6%] translate-y-[-260%] xl:translate-x-[59%] xl:translate-y-[-135%]">Look, feel, live,<br/>younger, longer</span>
 
             </div>
             <div className="px-8 xl:px-[84px] xl:py-[60px]">
