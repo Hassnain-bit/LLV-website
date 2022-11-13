@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import main_img from "../../images/main_img.png";
 
 export default function Main() {
@@ -17,8 +18,11 @@ export default function Main() {
                 src={main_img}
                 alt="main-img"
               />
-              <span className="text-xl xl:text-3xl font-semibold absolute top-1/2 left-1/2 translate-x-[-6%] translate-y-[-260%] xl:translate-x-[59%] xl:translate-y-[-135%]">Look, feel, live,<br/>younger, longer</span>
-
+              <span className="text-xl xl:text-3xl font-semibold absolute top-1/2 left-1/2 translate-x-[-6%] translate-y-[-260%] xl:translate-x-[59%] xl:translate-y-[-135%]">
+                Look, feel, live,
+                <br />
+                younger, longer
+              </span>
             </div>
             <div className="px-8 xl:px-[84px] xl:py-[60px]">
               <p className="text-xl xl:text-3xl">
@@ -39,12 +43,19 @@ export default function Main() {
           </div>
 
           <div className="mt-[60px] m-auto space-y-4 flex flex-col items-center xl:mt-[80px]">
-            <button className="flex justify-center w-[280px] px-[50px] py-3.5 bg-black rounded-[35px] font-bold text-[20px] leading-[24px] text-center text-[#FAF4ED]  ease-in-out duration-300  xl:px-[58px] xl:py-[18px] xl:w-full xl:max-w-[293px] hover:bg-[#545B89] hover:ease-in-out hover:duration-300">
+            <Link
+              to="/getStarted"
+              className="flex justify-center w-[280px] px-[50px] py-3.5 bg-black rounded-[35px] font-bold text-[20px] leading-[24px] text-center text-[#FAF4ED]  ease-in-out duration-300  xl:px-[58px] xl:py-[18px] xl:w-full xl:max-w-[293px] hover:bg-[#545B89] hover:ease-in-out hover:duration-300"
+            >
               Get Started
-            </button>
-            <button className="flex justify-center w-[280px] px-[50px] py-3.5 bg-black rounded-[35px] font-bold text-[20px] leading-[24px] text-center text-[#FAF4ED]  ease-in-out duration-300  xl:px-[58px] xl:py-[18px] xl:w-full xl:max-w-[293px] hover:bg-[#545B89] hover:ease-in-out hover:duration-300">
+            </Link>
+
+            <Link
+              to="/discover"
+              className="flex justify-center w-[280px] px-[50px] py-3.5 bg-black rounded-[35px] font-bold text-[20px] leading-[24px] text-center text-[#FAF4ED]  ease-in-out duration-300  xl:px-[58px] xl:py-[18px] xl:w-full xl:max-w-[293px] hover:bg-[#545B89] hover:ease-in-out hover:duration-300"
+            >
               Discover More
-            </button>
+            </Link>
           </div>
         </div>
       </div>

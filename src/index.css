@@ -15,3 +15,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #faf4ed;
 }
+
+html {
+  scroll-behavior: smooth;
+}
