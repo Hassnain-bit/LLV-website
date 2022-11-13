@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import discover_bottle_1 from "../../images/discover_bottle_1.png";
 import discover_bottle_2 from "../../images/discover_bottle_2.png";
 import discover_bottle_3 from "../../images/discover_bottle_3.png";
@@ -79,9 +80,12 @@ export default function Discover() {
           </div>
 
           <div className="mt-[60px] m-auto space-y-4 flex flex-col items-center xl:mt-[80px]">
-            <button className="flex justify-center w-[280px] px-[50px] py-3.5 bg-black rounded-[35px] font-bold text-[20px] leading-[24px] text-center text-[#FAF4ED]  ease-in-out duration-300  xl:px-[58px] xl:py-[18px] xl:w-full xl:max-w-[293px] hover:bg-[#545B89] hover:ease-in-out hover:duration-300">
+          <Link
+              to="/getStarted"
+              className="flex justify-center w-[280px] px-[50px] py-3.5 bg-black rounded-[35px] font-bold text-[20px] leading-[24px] text-center text-[#FAF4ED]  ease-in-out duration-300  xl:px-[58px] xl:py-[18px] xl:w-full xl:max-w-[293px] hover:bg-[#545B89] hover:ease-in-out hover:duration-300"
+            >
               Get Started
-            </button>
+            </Link>
           </div>
         </div>
       </div>
