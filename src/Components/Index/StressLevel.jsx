@@ -30,7 +30,7 @@ export default function StressLevel() {
                       id="Very Low Stress"
                       type="checkbox"
                       value=""
-                      className="w-9 h-9 text-black bg-transparent rounded-full border-black focus:ring-[#faf4ed]"
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
                     />
                     <label
                       htmlFor="Very Low Stress"
@@ -44,7 +44,7 @@ export default function StressLevel() {
                       id="Low Stress"
                       type="checkbox"
                       value=""
-                      className="w-9 h-9 text-black bg-transparent rounded-full border-black focus:ring-[#faf4ed]"
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
                     />
                     <label
                       htmlFor="Low Stress"
@@ -59,7 +59,7 @@ export default function StressLevel() {
                       id="Neither Low/High"
                       type="checkbox"
                       value=""
-                      className="w-9 h-9 text-black bg-transparent rounded-full border-black focus:ring-[#faf4ed]"
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
                     />
                     <label
                       htmlFor="Neither Low/High"
@@ -74,7 +74,7 @@ export default function StressLevel() {
                       id="High Stress"
                       type="checkbox"
                       value=""
-                      className="w-9 h-9 text-black bg-transparent rounded-full border-black focus:ring-[#faf4ed]"
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
                     />
                     <label
                       htmlFor="High Stress"
@@ -89,7 +89,7 @@ export default function StressLevel() {
                       id="Very High Stress"
                       type="checkbox"
                       value=""
-                      className="w-9 h-9 text-black bg-transparent rounded-full border-black focus:ring-[#faf4ed]"
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
                     />
                     <label
                       htmlFor="Very High Stress"
@@ -105,7 +105,7 @@ export default function StressLevel() {
 
           <div className="mt-[60px] m-auto space-y-4 flex flex-col items-center xl:mt-[80px]">
             <Link
-              to="/getStarted"
+              to="/whatNext"
               className="flex justify-center w-[280px] px-[50px] py-3.5 bg-black rounded-[35px] font-bold text-[20px] leading-[24px] text-center text-[#FAF4ED]  ease-in-out duration-300  xl:px-[58px] xl:py-[18px] xl:w-full xl:max-w-[293px] hover:bg-[#545B89] hover:ease-in-out hover:duration-300"
             >
               Next Question
