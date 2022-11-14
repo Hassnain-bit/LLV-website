@@ -30,7 +30,7 @@ export default function EnergyLevel() {
                     id="Very Low Energy"
                     type="checkbox"
                     value=""
-                    className="w-9 h-9 text-black bg-transparent rounded-full border-black focus:ring-[#faf4ed]"
+                    className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
                   />
                   <label
                     htmlFor="Very Low Energy"
@@ -44,7 +44,7 @@ export default function EnergyLevel() {
                     id="Low Energy"
                     type="checkbox"
                     value=""
-                    className="w-9 h-9 text-black bg-transparent rounded-full border-black focus:ring-[#faf4ed]"
+                    className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
                   />
                   <label
                     htmlFor="Low Energy"
@@ -59,7 +59,7 @@ export default function EnergyLevel() {
                     id="Neither Low/High"
                     type="checkbox"
                     value=""
-                    className="w-9 h-9 text-black bg-transparent rounded-full border-black focus:ring-[#faf4ed]"
+                    className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
                   />
                   <label
                     htmlFor="Neither Low/High"
@@ -74,7 +74,7 @@ export default function EnergyLevel() {
                     id="High Energy"
                     type="checkbox"
                     value=""
-                    className="w-9 h-9 text-black bg-transparent rounded-full border-black focus:ring-[#faf4ed]"
+                    className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
                   />
                   <label
                     htmlFor="High Energy"
@@ -89,7 +89,7 @@ export default function EnergyLevel() {
                     id="Very Energetic"
                     type="checkbox"
                     value=""
-                    className="w-9 h-9 text-black bg-transparent rounded-full border-black focus:ring-[#faf4ed]"
+                    className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
                   />
                   <label
                     htmlFor="Very Energetic"

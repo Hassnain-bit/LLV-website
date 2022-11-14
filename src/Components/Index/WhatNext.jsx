@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { TimePicker } from 'react-ios-time-picker';
 
 export default function WhatNext() {
-  const [value, setValue] = useState("10:00");
+  const [value, setValue] = useState("00:00");
 
   const onChange = (timeValue) => {
     setValue(timeValue);
   };
+
+
+
   return (
     <>
       <div className="pb-20 xl:pt-[107px] xl:pb-60">
@@ -43,8 +46,8 @@ export default function WhatNext() {
                 </p>
               </div>
 
-              <div className="border border-black mt-10">
-                <TimePicker onChange={onChange} value={value} />
+              <div className="border border-black mt-12">
+                <TimePicker onChange={onChange} value={value}/>
               </div>
             </div>
           </div>
@@ -52,16 +55,9 @@ export default function WhatNext() {
           <div className="mt-[60px] m-auto space-y-4 flex flex-col items-center xl:mt-[80px]">
             <Link
               to="/getStarted"
-              className="flex justify-center w-[280px] px-[50px] py-3.5 bg-black rounded-[35px] font-bold text-[20px] leading-[24px] text-center text-[#FAF4ED]  ease-in-out duration-300  xl:px-[58px] xl:py-[18px] xl:w-full xl:max-w-[293px] hover:bg-[#545B89] hover:ease-in-out hover:duration-300"
+              className="flex justify-center w-[280px] py-3.5 bg-black rounded-[35px] font-bold text-[20px] leading-[24px] text-center text-[#FAF4ED]  ease-in-out duration-300 xl:py-[18px] xl:w-full xl:max-w-[293px] hover:bg-[#545B89] hover:ease-in-out hover:duration-300"
             >
-              Get Started
-            </Link>
-
-            <Link
-              to="/discover"
-              className="flex justify-center w-[280px] px-[50px] py-3.5 bg-black rounded-[35px] font-bold text-[20px] leading-[24px] text-center text-[#FAF4ED]  ease-in-out duration-300  xl:px-[58px] xl:py-[18px] xl:w-full xl:max-w-[293px] hover:bg-[#545B89] hover:ease-in-out hover:duration-300"
-            >
-              Discover More
+              Set First Dose Notification
             </Link>
           </div>
         </div>
