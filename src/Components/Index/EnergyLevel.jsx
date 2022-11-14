@@ -25,79 +25,89 @@ export default function EnergyLevel() {
                 </p>
 
                 <div className="space-y-4">
-                <div className="flex items-center">
-                  <input
-                    id="Very Low Energy"
-                    type="checkbox"
-                    value=""
-                    className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
-                  />
-                  <label
-                    htmlFor="Very Low Energy"
-                    className="ml-4 text-[16px] leading-[24px] font-normal xl:text-[20px] xl:ml-6"
-                  >
-                    Very Low Energy
-                  </label>
-                </div>
-                <div className="flex items-center">
-                  <input
-                    id="Low Energy"
-                    type="checkbox"
-                    value=""
-                    className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
-                  />
-                  <label
-                    htmlFor="Low Energy"
-                    className="ml-4 text-[16px] leading-[24px] font-normal xl:text-[20px] xl:ml-6"
-                  >
-                    Low Energy
-                  </label>
-                </div>
+                  <div className="flex items-center">
+                    <input
+                      name="radio-button"
+                      id="Very Low Energy"
+                      type="radio"
+                      value=""
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]"
+                      style={{ border: "1px solid black" }}
+                    />
+                    <label
+                      htmlFor="Very Low Energy"
+                      className="ml-4 text-[16px] leading-[24px] font-normal xl:text-[20px] xl:ml-6"
+                    >
+                      Very Low Energy
+                    </label>
+                  </div>
+                  <div className="flex items-center">
+                    <input
+                      name="radio-button"
+                      id="Low Energy"
+                      type="radio"
+                      value=""
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]"
+                      style={{ border: "1px solid black" }}
+                    />
+                    <label
+                      htmlFor="Low Energy"
+                      className="ml-4 text-[16px] leading-[24px] font-normal xl:text-[20px] xl:ml-6"
+                    >
+                      Low Energy
+                    </label>
+                  </div>
 
-                <div className="flex items-center">
-                  <input
-                    id="Neither Low/High"
-                    type="checkbox"
-                    value=""
-                    className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
-                  />
-                  <label
-                    htmlFor="Neither Low/High"
-                    className="ml-4 text-[16px] leading-[24px] font-normal xl:text-[20px] xl:ml-6"
-                  >
-                    Neither Low/High
-                  </label>
-                </div>
+                  <div className="flex items-center">
+                    <input
+                      name="radio-button"
+                      id="Neither Low/High"
+                      type="radio"
+                      value=""
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]"
+                      style={{ border: "1px solid black" }}
+                    />
+                    <label
+                      htmlFor="Neither Low/High"
+                      className="ml-4 text-[16px] leading-[24px] font-normal xl:text-[20px] xl:ml-6"
+                    >
+                      Neither Low/High
+                    </label>
+                  </div>
 
-                <div className="flex items-center">
-                  <input
-                    id="High Energy"
-                    type="checkbox"
-                    value=""
-                    className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
-                  />
-                  <label
-                    htmlFor="High Energy"
-                    className="ml-4 text-[16px] leading-[24px] font-normal xl:text-[20px] xl:ml-6"
-                  >
-                    High Energy
-                  </label>
-                </div>
+                  <div className="flex items-center">
+                    <input
+                      name="radio-button"
+                      id="High Energy"
+                      type="radio"
+                      value=""
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]"
+                      style={{ border: "1px solid black" }}
+                    />
+                    <label
+                      htmlFor="High Energy"
+                      className="ml-4 text-[16px] leading-[24px] font-normal xl:text-[20px] xl:ml-6"
+                    >
+                      High Energy
+                    </label>
+                  </div>
 
-                <div className="flex items-center">
-                  <input
-                    id="Very Energetic"
-                    type="checkbox"
-                    value=""
-                    className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
-                  />
-                  <label
-                    htmlFor="Very Energetic"
-                    className="ml-4 text-[16px] leading-[24px] font-normal xl:text-[20px] xl:ml-6"
-                  >
-                    Very Energetic
-                  </label>
-                </div>
+                  <div className="flex items-center">
+                    <input
+                      name="radio-button"
+                      id="Very Energetic"
+                      type="radio"
+                      value=""
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]"
+                      style={{ border: "1px solid black" }}
+                    />
+                    <label
+                      htmlFor="Very Energetic"
+                      className="ml-4 text-[16px] leading-[24px] font-normal xl:text-[20px] xl:ml-6"
+                    >
+                      Very Energetic
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>

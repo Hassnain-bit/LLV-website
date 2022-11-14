@@ -27,10 +27,12 @@ export default function StressLevel() {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <input
+                      name="radio-button"
                       id="Very Low Stress"
-                      type="checkbox"
+                      type="radio"
                       value=""
-                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]"
+                      style={{ border: "1px solid black" }}
                     />
                     <label
                       htmlFor="Very Low Stress"
@@ -41,10 +43,12 @@ export default function StressLevel() {
                   </div>
                   <div className="flex items-center">
                     <input
+                      name="radio-button"
                       id="Low Stress"
-                      type="checkbox"
+                      type="radio"
                       value=""
-                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]"
+                      style={{ border: "1px solid black" }}
                     />
                     <label
                       htmlFor="Low Stress"
@@ -56,10 +60,12 @@ export default function StressLevel() {
 
                   <div className="flex items-center">
                     <input
+                      name="radio-button"
                       id="Neither Low/High"
-                      type="checkbox"
+                      type="radio"
                       value=""
-                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]"
+                      style={{ border: "1px solid black" }}
                     />
                     <label
                       htmlFor="Neither Low/High"
@@ -71,10 +77,12 @@ export default function StressLevel() {
 
                   <div className="flex items-center">
                     <input
+                      name="radio-button"
                       id="High Stress"
-                      type="checkbox"
+                      type="radio"
                       value=""
-                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]"
+                      style={{ border: "1px solid black" }}
                     />
                     <label
                       htmlFor="High Stress"
@@ -86,10 +94,12 @@ export default function StressLevel() {
 
                   <div className="flex items-center">
                     <input
+                      name="radio-button"
                       id="Very High Stress"
-                      type="checkbox"
+                      type="radio"
                       value=""
-                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]" style={{border:"1px solid black"}}
+                      className="w-9 h-9 text-black bg-transparent rounded-full border border-black focus:ring-[#faf4ed]"
+                      style={{ border: "1px solid black" }}
                     />
                     <label
                       htmlFor="Very High Stress"
