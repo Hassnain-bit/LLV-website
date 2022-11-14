@@ -19,3 +19,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.react-ios-time-picker-input{
+  width: 100%;
+}
