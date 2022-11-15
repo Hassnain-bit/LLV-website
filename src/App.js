@@ -16,6 +16,7 @@ import Results from "./Components/Index/Results";
 function App() {
   return (
     <>
+      {/* <SplashScreen /> */}
       <Header />
 
       <Routes>
@@ -26,8 +27,8 @@ function App() {
         <Route path="/stressLevel" element={<StressLevel />} />
         <Route path="/whatNext" element={<WhatNext />} />
         <Route path="/secondReminder" element={<SecondReminder />} />
-        <Route path="/allSet" element={<AllSet/>} />
-        <Route path="/results" element={<Results/>} />
+        <Route path="/allSet" element={<AllSet />} />
+        <Route path="/results" element={<Results />} />
       </Routes>
     </>
   );

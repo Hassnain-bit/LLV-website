@@ -4,9 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Montserrat", sans-serif !important;
+}
+
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 14px;
   color: #000;
   line-height: 1;
@@ -41,5 +45,108 @@ html {
     text-align: center;
     border: none !important;
     padding: 2rem !important;
+  }
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: #faf4ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.background.active {
+  opacity: 0;
+  z-index: -1;
+  background-color: transparent;
+  transition: 1s;
+  transition-delay: 9s;
+}
+
+.background .my-transition {
+  /* opacity: 1; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* transition: opacity 5s ease; */
+}
+
+.background .my-transition.active {
+  opacity: 0;
+  transition-delay: 5s;
+  /* transition: opacity 5s ease; */
+}
+
+.background .my-transition .logo {
+ 
+}
+
+.background .my-transition .logo.active {
+  
+  animation: logo_anim 5s;
+}
+
+@keyframes logo_anim {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+
+.background .my-transition-slogan {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* transition: opacity 5s ease; */
+  transition-delay: 5s;
+}
+
+.background .my-transition-slogan.active {
+  opacity: 1;
+  transition: opacity 5s ease;
+  transition-delay: 5s;
+}
+
+.background .my-transition-slogan .slogan {
+  
+}
+
+.background .my-transition-slogan .slogan.active {
+ 
+  animation: slogan_anim 5s;
+  animation-delay: 5s;
+}
+
+@keyframes slogan_anim {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
   }
 }
