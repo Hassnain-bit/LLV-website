@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { TimePicker } from "react-ios-time-picker";
+import TimeKeeper from "react-timekeeper";
 
 export default function SecondReminder() {
   const [value, setValue] = useState("00:00");
@@ -8,6 +9,9 @@ export default function SecondReminder() {
   const onChange = (timeValue) => {
     setValue(timeValue);
   };
+
+  const [time, setTime] = useState("00:00");
+  const [showTime, setShowTime] = useState(false);
 
   return (
     <>
@@ -44,8 +48,25 @@ export default function SecondReminder() {
                 </p>
               </div>
 
+              {/* <div className="border border-black mt-12">
+                <TimePicker onChange={onChange} value={value}/>
+              </div> */}
+
               <div className="border border-black mt-12">
-                <TimePicker onChange={onChange} value={value} />
+                <div className="py-6 px-8 xl:p-8 flex items-center justify-center flex-col gap-y-6 relative">
+                  {showTime && (
+                    <TimeKeeper
+                      time={time}
+                      onChange={(newTime) => setTime(newTime.formatted12)}
+                      onDoneClick={() => setShowTime(false)}
+                      switchToMinuteOnHourSelect
+                    />
+                  )}
+                  <span className="text-[1.25rem] xl:text-[1.875rem]">{time}</span>
+                  {!showTime && (
+                    <button className="absolute w-full h-full inset-0" onClick={() => setShowTime(true)}></button>
+                  )}
+                </div>
               </div>
             </div>
           </div>
