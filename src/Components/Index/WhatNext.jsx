@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { TimePicker } from 'react-ios-time-picker';
 
@@ -13,7 +13,7 @@ export default function WhatNext() {
 
   return (
     <>
-      <div className="pb-20 xl:pt-[107px] xl:pb-60">
+      <div className="pb-20 xl:pt-[107px] xl:pb-60 scroll-pt-96">
         <div className="max-w-[1080px] m-auto relative">
           <h1 className="bg-[#405F53] mb-8 p-8 font-bold text-[#FAF4ED] text-[28px] leading-[34px] uppercase text-center xl:bg-transparent xl:mb-[100px] xl:font-light xl:text-[60px] xl:leading-[64px] xl:text-black">
             What's Next?

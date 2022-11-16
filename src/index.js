@@ -5,14 +5,45 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import ScrollToTop from "./Components/Base/ScrollToTop";
+import MediaQueryReact from "media-query-react";
+import { ForDevice } from "media-query-react";
+import ScrollToTopMobile from "./Components/Base/ScrollToTopMobile";
+
+const screenSize = {
+  mobile: {
+    // custom device name
+    minWidth: 320,
+    maxWidth: 480,
+  },
+  mobileLandscape: {
+    minWidth: 481,
+    maxWidth: 767,
+  },
+  tablet: {
+    minWidth: 768,
+    maxWidth: 1024,
+  },
+  desktop: {
+    minWidth: 1025,
+    maxWidth: 2500,
+  },
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <ScrollToTop />
-      <App />
-    </BrowserRouter>
+    <MediaQueryReact mediaQueries={screenSize}>
+      <BrowserRouter>
+        <ForDevice deviceName={["tablet", "desktop"]}>
+          <ScrollToTop />
+        </ForDevice>
+
+        <ForDevice deviceName="mobile">
+          <ScrollToTopMobile />
+        </ForDevice>
+        <App />
+      </BrowserRouter>
+    </MediaQueryReact>
   </React.StrictMode>
 );
 
